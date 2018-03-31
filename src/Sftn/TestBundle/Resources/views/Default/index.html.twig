@@ -1,0 +1,294 @@
+{% extends 'SftnTestBundle::layout.html.twig' %}
+{% block body %}
+
+            <!-- Hero Section -->
+            <section id="hero" class="hero">
+                <div id="slider" class="sl-slider-wrapper">
+
+                    <div class="sl-slider">
+                        <!-- slide -->
+                        <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                            <div class="sl-slide-inner" style="background-image: url({{ asset('bundles/sftntest/img/hero-bg.jpg') }});">
+                                <div class="container">
+                                    <h2>Taxi  <span class="text-primary">Paris & Ile de France </span></h2>
+                                    <h1></h1>
+                                    <p>Des taxis &agrave; votre disposition avec syst&eacute;me GPS pour une meilleure fluidit&eacute; dans vos parcours <a href="https://ingecole.fr/" target="_blank">&agrave; Paris 24h/24</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide -->
+                        <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+                            <div class="sl-slide-inner" style="background-image: url({{ asset('bundles/sftntest/img/hero-bg02.jpg') }});">
+                                <div class="container">
+                                    <h2>R&eacute;servez votre taxi <span class="text-primary">adapte a vos attentes </span></h2>
+                                    <p>Estimer vos tarif de trajet avec Starcab94 pour garantit des courses sans surprise ni frais cach&eacutes,  <a href="https://ingecole.fr/" target="_blank">24h/24 7j/7.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide -->
+                        <div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+                            <div class="sl-slide-inner" style="background-image: url({{ asset('bundles/sftntest/img/hero-bg03.jpg') }});">
+                                <div class="container">
+                                    <h2>Des v&eacute;hicules <span class="text-primary">de qualit&eacute;</span></h2>     
+                                    <p>Pour Une visite touristique, un voyage d'affaires, vous trouverez un taxi disponible 24H/24 et 7 jours sur 7 pour tous vos d&eacute;placements dans Paris et ses environs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End sl-slider -->
+
+                    <!-- slider pagination -->
+                    <nav id="nav-dots" class="nav-dots">
+                        <span class="nav-dot-current"></span>
+                        <span></span>
+                        <span></span>
+                    </nav>
+
+                    <!-- scroll down btn -->
+                    <a id="scroll-down" href="#about" class="hidden-xs"></a>
+
+                    <!-- social icons menu -->
+                    <div class="social">
+                        <div class="wrapper">
+                            <ul class="list-unstyled">
+                                <li><a href="#" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" title="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" title="pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#" title="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                            <span>Follow us on</span>
+                        </div>
+                    </div>
+                </div><!-- End slider-wrapper -->
+            </section><!-- End Hero Section -->
+
+
+
+            <!-- Details -->
+            <section id="details" class="details">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="heading text-center">
+                                <p>Appelez-nous maintenant pour</p>
+                                <h5>vos deplacements</h5>
+                            </div>
+                            <a href="tel:9870988764" class="phone">987 098 8764</a>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="heading text-center">
+                                <p>V&eacute;rifiez nos clients </p>
+                                <h5>Rating &amp; Reviews</h5>
+                            </div>
+                            <a href="#" class="reviews btn-unique"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Details-->
+
+
+            <!-- About Section 
+            <section id="about" class="about">
+                <div class="container text-center">
+                    <header>
+                        <h2>About Restaurant</h2>
+                        <h3>Check our story</h3>
+                    </header>
+                    <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur</p>
+                </div>
+            </section>
+             End About Section -->
+              <!--section calcule KM -->
+           	  <section id="calcule" class="calcule">
+                    <div id="map"></div>
+                    <div class="container text-center">
+                        <div class="form-holder">
+                            <header>
+                                <h2>Estimation Gratuit du Prix </h2>
+                                <h3>de votre Trajet</h3>
+                            </header>
+    
+                            <form method="get" action="#" id="distance_form">
+                                <div class="row">
+                                    <label for="depart-adress" class="col-sm-6 unique">Point de d&eacutepart
+                                        <input type="search" name="depart" id="from_places" required>
+                                        <input id="origin" name="origin" required="" type="hidden" />
+                                    </label>
+                                    <label for="destination-adress" class="col-sm-6 unique">Point d'arriv&eacutee
+                                        <input type="search" name="destination" id="to_places" required>
+                                        <input id="destination" name="destination" required="" type="hidden" />
+                                    </label>
+                                   
+                                    <div class="col-sm-12">
+                                        <button type="submit" class="btn-unique" id="submit">Calculer</button>
+                                    </div>
+                                </div>
+                            </form>
+                             <label  class="col-sm-12 unique">Prix du trajet
+                                <textarea id="in_prix" name="prix"  required></textarea>
+                             </label>
+                        </div>
+                    </div>        
+            </section>   
+            <!-- fin section de calcule de KM -->
+            <!--  section du formulaire dynamique  -->
+            
+            
+            
+            <!-- fin de section de formulaire dynamique  -->
+            
+            
+ 
+            
+            <section id="services" class="services">
+                <div class="container text-center">
+                    <header>
+                        <h2>Nos Service De transport</h2>
+                        <h3>Vos satisfaction</h3>
+                    </header>
+
+                    <div class="row">
+                        <!-- item -->
+                        <div class="col-sm-4 service">
+                            <div class="icon">
+                                <i class="icon-like"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Recoive votre demande</h4>
+                                <p>Apres avoir recus votre demande de transport nous vous applon avant 15 min de commencement de course pour vous confirmer la deplacement</p>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="col-sm-4 service">
+                            <div class="icon">
+                                <i class="icon-hat"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Starcab94 &amp;L'experts de transport </h4>
+                                <p>Plusieur client nous donnes leurs confiances et nous les merites en plus , nous sarrongent avec nos client et nous somme tres a lecoute ,</p>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="col-sm-4 service">
+                            <div class="icon">
+                                <i class="icon-plate"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Mession validee</h4>
+                                <p>Lore de notre trajet en essaille de garder une bonne discution avec notre client et de avoir  un simple contacte creatif pour finir par leurs satisfection totale,</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Services Section -->
+
+
+            <!-- App Section -->
+            <section id="app" class="app">
+                <div class="container text-center has-border">
+                    <h5>Nous somme bien placer dans le marcher de transport en Ile de France</h5>
+                    <ul class="list-unstyled list-inline">
+                        <li><a href="https://bootstraptemple.com/" target="_blank" title="Google Play" class="btn-unique-white">Devis de Trajet gratuit</a></li>
+                        <li><a href="https://bootstraptemple.com/" target="_blank" title="Appstore" class="btn-unique-white">Notre application en cours de construction</a></li>
+                        <li><a href="https://bootstraptemple.com/" target="_blank" title="Bootstrap Temple" class="btn-unique-white">Telecharger plus de detaille </a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- End App Section -->
+
+
+
+         
+
+            <!-- Booking Section -->
+            <section id="booking" class="booking">
+                <div class="container text-center">
+                    <header>
+                        <h2>Reservation du Trajet</h2>
+                        <h3>Envoyer nous votre reservation</h3>
+                    </header>
+
+                    <div class="row">
+                        <div class="form-holder col-md-10 col-md-push-1 text-center">
+                            <div class="ribbon">
+                                <i class="fa fa-star"></i>
+                            </div>
+
+                            <h2>reservation simple et facile </h2>
+                            <h3>Rapide et gratuit</h3>
+
+                            <form id="booking-form" method="get" action="#">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-push-1">
+                                        <div class="row">
+                                            <label for="name" class="col-sm-6 unique">Nom
+                                                <input name="name" type="text" id="name" required>
+                                            </label>
+                                            <label for="email" class="col-sm-6 unique">Email
+                                                <input name="email" type="email" id="email" required>
+                                            </label>
+                                            <label for="number" class="col-sm-6 unique">Nombre
+                                                <input name="number" type="text" id="number" required>
+                                            </label>
+                                            <label for="people" class="col-sm-6 unique">Personnes
+                                                <input name="people" type="number" id="people" min="1" required>
+                                            </label>
+                                            <label for="date" class="col-sm-6 unique">Date
+                                                <input name="date" type="text" id="date" class="datepicker-here" data-language='en' required>
+                                            </label>
+                                            <label for="time" class="col-sm-6 unique">Temps 
+                                                <input name="time" type="text" id="time" class="timepicker" required>
+                                            </label>
+                                            <label for="request" class="col-sm-12 unique">Speciale
+                                                <textarea id="request" name="request" required></textarea>
+                                            </label>
+                                            <div class="col-sm-12">
+                                                <button type="submit" class="btn-unique">Envoyer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Booking Section -->
+
+
+            <!-- End Booking Section -->
+            <section id="contact" class="contact">
+                <div id="map"></div>
+                <div class="container text-center">
+                    <div class="form-holder">
+                        <header>
+                            <h2>Nous Contacter </h2>
+                            <h3> nous vous repondre pour tout votre questions</h3>
+                        </header>
+
+                        <form method="get" action="#" id="contact-form">
+                            <div class="row">
+                                <label for="user-name" class="col-sm-6 unique">Nom
+                                    <input type="text" name="username" id="user-name" required>
+                                </label>
+                                <label for="user-email" class="col-sm-6 unique">Email
+                                    <input type="email" name="useremail" id="user-email" required>
+                                </label>
+                                <label for="message" class="col-sm-12 unique">Votre message 
+                                    <textarea name="message" id="message" required></textarea>
+                                </label>
+                                <div class="col-sm-12">
+                                    <button type="submit" class="btn-unique" id="submit">Envoyer</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- End Booking Section -->
+            
+{% endblock %}

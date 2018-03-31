@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- Responsive meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- IE Compatibility meta -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Description meta -->
+        <meta name="description" content="...">
+        <!-- Author meta -->
+        <meta name="author" content="STARCAB94 LE TRANSPORT">
+
+        <!-- Page Title -->
+        <title>STARCAB94 LE TRANSPORT QU'IL VOUS FAUT </title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{{ asset('bundles/sftntest/img/favicon.ico') }}">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href=" {{ asset('bundles/sftntest/css/bootstrap.min.css') }}">
+        <!-- Custom font icons -->
+        <link rel="stylesheet" href="https://file.myfontastic.com/6AeAYiqp5KBjSiZ2tE8WJW/icons.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Slider -->
+        <link rel="stylesheet" href="{{ asset('bundles/sftntest/css/slider.min.css') }}">
+        <!-- Lightbox Pop up -->
+        <link rel="stylesheet" href="{{ asset('bundles/sftntest/css/lightbox.min.css') }}">
+        <!-- Datepicker -->
+        <link rel="stylesheet" href="{{ asset('bundles/sftntest/css/datepicker.min.css') }}">
+        <!-- Datepicker -->
+        <link rel="stylesheet" href="{{ asset('bundles/sftntest/css/timepicki.min.css') }}">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="{{ asset('bundles/sftntest/css/owl.carousel.min.css') }}">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{{ asset('bundles/sftntest/css/style.default.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/sftntest/css/style-dynamique-formu.css') }}">
+        <!-- Modernizr -->
+        <script type="text/javascript" src="{{ asset('bundles/sftntest/js/modernizr.custom.79639.min.js') }}"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script  defer src="https://maps.googleapis.com/maps/api/js?libraries=places&language=fr&key=AIzaSyCIxfgEgGe4FMYeBG8C-TBQaYb7yUVwASo"  type="text/javascript"></script>
+		
+	
+    </head>
+    <body>
+
+        <div class="page-holder">
+            <!-- Navbar -->
+            <header class="header">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header"><a href="index.html" class="navbar-brand"><img src="{{ asset('bundles/sftntest/img/logo.png') }}" alt="Italiano" width="100"></a>
+                            <div class="navbar-buttons">
+                                <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="fa fa-align-justify"></i></button>
+                            </div>
+                        </div>
+                        <div id="navigation" class="collapse navbar-collapse navbar-right">
+                            <ul class="nav navbar-nav">
+                                
+                                <!-- <li><a href="#about">About</a></li>
+                                <li><a href="#dishes">Dishes</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="#gallery">Gallery</a></li>-->
+                                <li class="active"><a href="#hero">Accueil</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#booking">Reservation</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                            <a href="#" class="btn navbar-btn btn-unique hidden-sm hidden-xs" id="open-reservation">Faire une réservation</a>
+                        </div>
+                    </div>
+                </nav>
+            </header><!-- End Navbar -->
+
+
+{% block body %} {% endblock %}
+
+            <!-- Footer -->
+            <footer id="mainFooter" class="mainFooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 brief">
+                            <div class="header">
+                                <img src="{{ asset('bundles/sftntest/img/logo-footer.png') }}" alt="italiano" width="100">
+                            </div>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+
+                        <div class="col-md-4 contact">
+                            <div class="header">
+                                <h6>Contact</h6>
+                            </div>
+                            <ul class="contact list-unstyled">
+                                <li><span class="icon-map text-primary"></span>Basioun, 23 July st, Egypt</li>
+                                <li><a href="mailto:Italiano@Company.com"><span class="icon-phone text-primary"></span>Italiano@Company.com</a></li>
+                                <li><span class="icon-mail text-primary"></span>9465 7675 294</li>
+                                <li><span class="icon-printer text-primary"></span>333-999-666</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 newsletter">
+                            <div class="header">
+                                <h6>Newsletter</h6>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmo.</p>
+                            <form action="#" id="subscribe" class="clearfix">
+                                <input type="email" name="subscribtion-email" placeholder="Enter Your Email Address" class="pull-left">
+                                <button type="submit" class="btn-unique has-border pull-left">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <ul class="social list-unstyled list-inline">
+                        <li><a href="#" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#" target="_blank" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" target="_blank" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#" target="_blank" title="Skype"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="copyrights">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <ul class="list-unstyled list-inline">
+                                    <li><a href="#">Policy Privacy</a></li>
+                                    <li><a href="#">Terms of Use</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-7">
+                                <p>&copy; 2017 Italiano Restaurant. Template By <a href="https://bootstraptemple.com/" target="_blank">BootstrapTemple.com</a></p>
+                                <!-- Please do not remove the backlink to us unless you have purchased the attribution-free license at https://bootstraptemple.com. It is part of the license conditions. Thanks for understanding :) -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer -->
+
+            <!-- scroll top btn -->
+            <div id="scrollTop" class="btn-unique">
+                <i class="fa fa-angle-up"></i>
+            </div><!-- end scroll top btn -->
+
+
+            <!-- moadal booking form -->
+            <div class="reservation-overlay hidden-sm hidden-xs">
+                <section id="reservation-modal" class="reservation-modal">
+                    <div id="close"><i class="icon-close"></i></div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="form-holder col-md-12 text-center">
+                                <h2>Make a reservation</h2>
+                                <h3>Book your table now</h3>
+
+                                <form id="booking-form-alternative" method="get"  action="#">
+                                    <div class="row">
+                                        <div class="col-md-push-1 col-sm-10">
+                                            <div class="row">
+                                                <label for="cname" class="col-sm-6 unique">Name
+                                                    <input name="clientname" type="text" id="cname" required>
+                                                </label>
+                                                <label for="cemail" class="col-sm-6 unique">Email
+                                                    <input name="clientemail" type="email" id="cemail" required>
+                                                </label>
+                                                <label for="cnumber" class="col-sm-6 unique">Number
+                                                    <input name="clientnumber" type="text" id="cnumber" required>
+                                                </label>
+                                                <label for="cpeople" class="col-sm-6 unique">How Many People
+                                                    <input name="clientpeople" type="number" id="cpeople" min="1" required>
+                                                </label>
+                                                <label for="cdate" class="col-sm-6 unique">Date
+                                                    <input name="clientdate" type="text" id="cdate" class="datepicker-here" data-language='en' required>
+                                                </label>
+                                                <label for="time-alt" class="col-sm-6 unique">Time
+                                                    <input name="clienttime" type="text" id="time-alt" class="timepicker" required>
+                                                </label>
+                                                <label for="request-alt" class="col-sm-12 unique">Special Request
+                                                    <textarea id="request-alt" name="clientrequest" required></textarea>
+                                                </label>
+                                                <div class="col-sm-12">
+                                                    <button type="submit" class="btn-unique">Book Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div><!-- end modal booking form -->
+        </div>
+
+
+<script>
+    $(function() {
+        // add input listeners
+        google.maps.event.addDomListener(window, 'load', function () {
+            var from_places = new google.maps.places.Autocomplete(document.getElementById('from_places'));
+            var to_places = new google.maps.places.Autocomplete(document.getElementById('to_places'));
+
+            google.maps.event.addListener(from_places, 'place_changed', function () {
+                var from_place = from_places.getPlace();
+                var from_address = from_place.formatted_address;
+                $('#origin').val(from_address);
+            });
+
+            google.maps.event.addListener(to_places, 'place_changed', function () {
+                var to_place = to_places.getPlace();
+                var to_address = to_place.formatted_address;
+                $('#destination').val(to_address);
+            });
+
+        });
+        // calculate distance
+        function calculateDistance() {
+            var origin = $('#origin').val();
+            var destination = $('#destination').val();
+            var service = new google.maps.DistanceMatrixService();
+            service.getDistanceMatrix(
+                {
+                    origins: [origin],
+                    destinations: [destination],
+                    travelMode: google.maps.TravelMode.DRIVING,
+                    //unitSystem: google.maps.UnitSystem.IMPERIAL, // miles and feet.
+                    unitSystem: google.maps.UnitSystem.metric, // kilometers and meters.
+                    avoidHighways: false,
+                    avoidTolls: false
+                }, callback);
+        }
+        // get distance results
+        function callback(response, status) {
+            if (status != google.maps.DistanceMatrixStatus.OK) {
+                $('#result').html(err);
+            } else {
+                var origin = response.originAddresses[0];
+                var destination = response.destinationAddresses[0];
+                if (response.rows[0].elements[0].status === "ZERO_RESULTS") {
+                    $('#result').html("Mieux vaut prendre l'avion. Il n'y a pas de routes entre "  + origin + " et " + destination);
+                } else {
+                    var distance = response.rows[0].elements[0].distance;
+                    var duration = response.rows[0].elements[0].duration;
+                    console.log(response.rows[0].elements[0].distance);
+                    var distance_in_kilo = distance.value / 1000; // the kilom
+                    var distance_in_mile = distance.value / 1609.34; // the mile
+                    var duration_text = duration.text;
+                    var duration_value = duration.value;
+                    $('#in_mile').text(distance_in_mile.toFixed(2));
+                    $('#in_kilo').text(distance_in_kilo.toFixed(2));
+                    $('#in_prix').text((distance_in_kilo.toFixed(2))*1,25);
+                    $('#duration_text').text(duration_text);
+                    $('#duration_value').text(duration_value);
+                    $('#from').text(origin);
+                    $('#to').text(destination);
+                }
+            }
+        }
+        // print results on submit the form
+        $('#distance_form').submit(function(e){
+            e.preventDefault();
+            calculateDistance();
+        });
+
+    });
+
+</script>
+<script>
+$(document).ready(function () {
+    //Initialize tooltips
+    $('.nav-tabs > li a[title]').tooltip();
+    
+    //Wizard
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+        var $target = $(e.target);
+    
+        if ($target.parent().hasClass('disabled')) {
+            return false;
+        }
+    });
+
+    $(".next-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        $active.next().removeClass('disabled');
+        nextTab($active);
+
+    });
+    $(".prev-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        prevTab($active);
+
+    });
+});
+
+function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+}
+function prevTab(elem) {
+    $(elem).prev().find('a[data-toggle="tab"]').click();
+}
+
+
+//according menu
+
+$(document).ready(function()
+{
+    //Add Inactive Class To All Accordion Headers
+    $('.accordion-header').toggleClass('inactive-header');
+	
+	//Set The Accordion Content Width
+	var contentwidth = $('.accordion-header').width();
+	$('.accordion-content').css({});
+	
+	//Open The First Accordion Section When Page Loads
+	$('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');
+	$('.accordion-content').first().slideDown().toggleClass('open-content');
+	
+	// The Accordion Effect
+	$('.accordion-header').click(function () {
+		if($(this).is('.inactive-header')) {
+			$('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
+			$(this).toggleClass('active-header').toggleClass('inactive-header');
+			$(this).next().slideToggle().toggleClass('open-content');
+		}
+		
+		else {
+			$(this).toggleClass('active-header').toggleClass('inactive-header');
+			$(this).next().slideToggle().toggleClass('open-content');
+		}
+	});
+	
+	return false;
+});
+</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="{{ asset('bundles/sftntest/js/bootstrap.min.js') }}"></script>
+       
+        <script src="{{ asset('bundles/sftntest/js/jquery.ba-cond.min.js') }}"></script>
+        <script src="{{ asset('bundles/sftntest/js/jquery.slitslider.min.js') }}"></script>
+        <script src="{{ asset('bundles/sftntest/js/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('bundles/sftntest/js/lightbox.min.js') }}"></script>
+        <script src="{{ asset('bundles/sftntest/js/datepicker.min.js') }}"></script>
+        <script src="{{ asset('bundles/sftntest/js/datepicker.en.min.js') }}"></script>
+        <script src="{{ asset('bundles/sftntest/js/timepicki.min.js') }}"></script>
+        <script src="{{ asset('bundles/sftntest/js/jquery.validate.min.js') }}"></script>
+        <script src="{{ asset('bundles/sftntest/js/smooth.scroll.min.js') }}"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0dSWcBx-VghzhzQB6oCMTgeXMOhCYTvk"></script>
+        <script src="{{ asset('bundles/sftntest/js/map.min.js') }}"></script>
+        <script src="{{ asset('bundles/sftntest/js/script.js') }}"></script>
+    </body>
+</html>

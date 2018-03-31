@@ -1,0 +1,16 @@
+sftn_test:
+    path:     /contact
+    defaults: { _controller: myBundle:Default:contact }
+sftn_test:
+    resource: "@SftnTestBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+catalogue:
+    resource: "@CatalogueBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

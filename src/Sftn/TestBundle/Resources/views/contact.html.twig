@@ -1,0 +1,22 @@
+{{ form_start(form)}}
+
+<div>
+    {{ from_widget(from.subject)}}
+    {{ from_errors(from.subject)}}
+</div>
+<div>
+    {{ from_widget(from.email)}}
+    {{ from_errors(from.email)}}
+</div>
+<div>
+    {{ from_widget(from.message)}}
+    {{ from_errors(from.message)}}
+</div>
+
+<div style="display: none">
+    {{ from_rest(from)}}
+</div>
+
+<input type="submit" value="Submit">
+
+{{ form_end(form)}}
