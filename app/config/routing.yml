@@ -1,16 +1,10 @@
 sftn_test:
-    path:     /contact
-    defaults: { _controller: myBundle:Default:contact }
+    resource: '@SftnTestBundle/Resources/config/routing.yml'
+    prefix:   /
 sftn_test:
     resource: "@SftnTestBundle/Controller/"
     type:     annotation
     prefix:   /
-
-catalogue:
-    resource: "@CatalogueBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
 app:
     resource: '@AppBundle/Controller/'
     type: annotation

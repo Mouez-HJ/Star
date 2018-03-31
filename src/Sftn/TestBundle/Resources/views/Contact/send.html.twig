@@ -1,0 +1,39 @@
+{% extends 'SftnTestBundle::layout.html.twig' %}
+{% block contact %}
+
+            <!-- End Booking Section -->
+            <section id="contact" class="contact">
+                <div id="map"></div>
+                <div class="container text-center">
+                    <div class="form-holder">
+                        <header>
+                            <h2>Nous Contacter </h2>
+                            <h3> nous vous repondre pour tout votre questions</h3>
+                        </header>
+						<p> {{ form_errors(form) }}</p>
+                        <form role="form" method="post" action='{{ path('sftn_test_contact') }}' id="contact-form">
+                            <div class="row">
+                                <label for="user-name" class="col-sm-6 unique">Nom
+                                    <!-- <input type="text" name="username" id="user-name" required> -->
+                                    {{ form_widget (form.name) }}
+                                </label>
+                                <label for="user-email" class="col-sm-6 unique">Email
+                                   <!-- <input type="email" name="useremail" id="user-email" required> --> 
+                                   {{ form_widget (form.email) }}
+                                </label>
+                                <label for="message" class="col-sm-12 unique">Votre message 
+                                   <!-- <textarea name="message" id="message" required></textarea> --> 
+                                   {{ form_widget (form.message) }}
+                                </label>
+                                <div class="col-sm-12">
+                                   {{ form_widget (form._token) }}
+                                   <!--  --> <button type="submit" class="btn-unique" id="submit">Envoyer</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- End Booking Section --> 
+            
+{% endblock %}
