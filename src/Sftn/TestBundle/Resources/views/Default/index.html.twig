@@ -55,7 +55,7 @@
                                 <li><a href="#" title="pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
                                 <li><a href="#" title="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             </ul>
-                            <span>Follow us on</span>
+                            <span>nos Reseau socieaux</span>
                         </div>
                     </div>
                 </div><!-- End slider-wrapper -->
@@ -78,7 +78,7 @@
                         <div class="col-sm-6">
                             <div class="heading text-center">
                                 <p>V&eacute;rifiez nos clients </p>
-                                <h5>Rating &amp; Reviews</h5>
+                                <h5>Avis &amp; commentaires</h5>
                             </div>
                             <a href="#" class="reviews btn-unique"><i class="fa fa-angle-right"></i></a>
                         </div>
@@ -127,10 +127,41 @@
                             </form>
                              <label  class="col-sm-12 unique">Prix du trajet
                                 <textarea id="in_prix" name="prix"  required></textarea>
-                             </label>
+                             </label> 
+                            
+                   
+                           
+                            
+                            
+                             
                         </div>
                     </div>        
             </section>   
+
+            <section id="booking" class="booking">
+                   
+                        <!--<header>
+                            <h2>Reservation du Trajet</h2>
+                            <h3>Envoyer nous votre reservation</h3>
+                        </header>-->
+                     <!-- faire reservatio -->
+                        <div class="row">
+                            <div class="form-holder col-md-10 col-md-push-1 text-center">
+                                <div class="ribbon">
+                                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                </div>
+
+                                <h2>Contunier votre Reservation </h2>
+                                <h3>Nous vous contacterons le plus vite possible </h3>
+                                <a href="#" class="btn navbar-btn btn-unique hidden-sm hidden-xs" id="open-reservation">Faire une r&eacute;servation</a>
+                            </div> 
+                             
+                        </div>
+                                        <!-- finde faire reservation -->
+                 
+            </section>
+
+
             <!-- fin section de calcule de KM -->
             <!--  section du formulaire dynamique  -->
             
@@ -152,7 +183,7 @@
                         <!-- item -->
                         <div class="col-sm-4 service">
                             <div class="icon">
-                                <i class="icon-like"></i>
+                                <i class="glyphicon-download-alt"></i>
                             </div>
                             <div class="text">
                                 <h4>Recoive votre demande</h4>
@@ -192,10 +223,14 @@
                 <div class="container text-center has-border">
                     <h5>Nous somme bien placer dans le marcher de transport en Ile de France</h5>
                     <ul class="list-unstyled list-inline">
-                        <li><a href="https://bootstraptemple.com/" target="_blank" title="Google Play" class="btn-unique-white">Devis de Trajet gratuit</a></li>
-                        <li><a href="https://bootstraptemple.com/" target="_blank" title="Appstore" class="btn-unique-white">Notre application en cours de construction</a></li>
-                        <li><a href="https://bootstraptemple.com/" target="_blank" title="Bootstrap Temple" class="btn-unique-white">Telecharger plus de detaille </a></li>
+                        <li><a href="https://ingecole.fr/" target="_blank" title="Google Play" class="btn-unique-white">Devis de Trajet gratuit</a></li>
+                        <li><a href="https://ingecole.fr/" target="_blank" title="Appstore" class="btn-unique-white">Notre application en cours de construction</a></li>
+                        <li><a href="https://ingecole.fr/" target="_blank" title="Bootstrap Temple" class="btn-unique-white">Telecharger plus de detaille </a></li>
                     </ul>
+                </div>
+                <div class="text">
+                                <h4></h4>
+                               
                 </div>
             </section>
             <!-- End App Section -->
@@ -205,7 +240,7 @@
          
 
             <!-- Booking Section -->
-            <section id="booking" class="booking">
+           <!--   <section id="booking" class="booking">
                 <div class="container text-center">
                     <header>
                         <h2>Reservation du Trajet</h2>
@@ -222,9 +257,18 @@
                             <h3>Rapide et gratuit</h3>
 
                             <form id="booking-form" method="get" action="#">
-                                <div class="row">
+                               <div class="row">
                                     <div class="col-md-10 col-md-push-1">
                                         <div class="row">
+                                        <label  class="col-sm-12 unique">Prix du trajet
+                                            <textarea id="in_prix" name="prix" disabled="disabled" required></textarea>
+                                         </label>
+                                         <label  class="col-sm-12 unique">Depart
+                                            <textarea id="from" name="prix" disabled="disabled" required></textarea>
+                                         </label>
+                                         <label  class="col-sm-12 unique">arriver
+                                            <textarea id="to" name="prix" disabled="disabled" required></textarea>
+                                         </label>
                                             <label for="name" class="col-sm-6 unique">Nom
                                                 <input name="name" type="text" id="name" required>
                                             </label>
@@ -251,12 +295,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> 
                             </form>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
             <!-- End Booking Section -->
 
 
@@ -290,5 +334,7 @@
                 </div>
             </section>
             End Booking Section -->
+            
+            
             
 {% endblock %}

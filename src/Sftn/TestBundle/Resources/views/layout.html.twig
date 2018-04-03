@@ -49,7 +49,7 @@
             <header class="header">
                 <nav class="navbar navbar-default navbar-fixed-top">
                     <div class="container">
-                        <div class="navbar-header"><a href="index.html" class="navbar-brand"><img src="{{ asset('bundles/sftntest/img/logo.png') }}" alt="Italiano" width="100"></a>
+                        <div class="navbar-header"><a href="index.html" class="navbar-brand"><img src="{{ asset('bundles/sftntest/img/logo00.png') }}" alt="starcab94" width="100"></a>
                             <div class="navbar-buttons">
                                 <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="fa fa-align-justify"></i></button>
                             </div>
@@ -62,11 +62,12 @@
                                 <li><a href="#menu">Menu</a></li>
                                 <li><a href="#gallery">Gallery</a></li>-->
                                 <li class="active"><a href="#hero">Accueil</a></li>
-                                <li><a href="#services">Services</a></li>
                                 <li><a href="#booking">Reservation</a></li>
-                                <li><a href="{{ path('sftn_test_contact' }}">Contact</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="{{ path('sftn_test_contact') }}">Contact</a></li>
+                                
                             </ul>
-                            <a href="#" class="btn navbar-btn btn-unique hidden-sm hidden-xs" id="open-reservation">Faire une réservation</a>
+                            
                         </div>
                     </div>
                 </nav>
@@ -75,13 +76,15 @@
 
 {% block body %} {% endblock %}
 {% block contact %}{% endblock %}
+
+
             <!-- Footer -->
             <footer id="mainFooter" class="mainFooter">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 brief">
+                       <!-- <div class="col-md-4 brief">
                             <div class="header">
-                                <img src="{{ asset('bundles/sftntest/img/logo-footer.png') }}" alt="italiano" width="100">
+                                <img src="{{ asset('bundles/sftntest/img/logo-footeeeer.png') }}" alt="starcab94" width="100">
                             </div>
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                         </div>
@@ -92,7 +95,7 @@
                             </div>
                             <ul class="contact list-unstyled">
                                 <li><span class="icon-map text-primary"></span>Basioun, 23 July st, Egypt</li>
-                                <li><a href="mailto:Italiano@Company.com"><span class="icon-phone text-primary"></span>Italiano@Company.com</a></li>
+                                <li><a href="mailto:starcab94@Company.com"><span class="icon-phone text-primary"></span>starcab94@Company.com</a></li>
                                 <li><span class="icon-mail text-primary"></span>9465 7675 294</li>
                                 <li><span class="icon-printer text-primary"></span>333-999-666</li>
                             </ul>
@@ -118,26 +121,28 @@
                         <li><a href="#" target="_blank" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
                         <li><a href="#" target="_blank" title="Skype"><i class="fa fa-skype"></i></a></li>
                     </ul>
-                </div>
+                </div>-->
 
                 <div class="copyrights">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-5">
                                 <ul class="list-unstyled list-inline">
-                                    <li><a href="#">Policy Privacy</a></li>
-                                    <li><a href="#">Terms of Use</a></li>
+                                   <!--  <li><a href="#">Policy Privacy</a></li>
+                                    <li><a href="#">Terms of Use</a></li>-->
                                     <li><a href="#">Contact</a></li>
                                 </ul>
                             </div>
 
-                            <div class="col-sm-7">
-                                <p>&copy; 2017 Italiano Restaurant. Template By <a href="https://bootstraptemple.com/" target="_blank">BootstrapTemple.com</a></p>
-                                <!-- Please do not remove the backlink to us unless you have purchased the attribution-free license at https://bootstraptemple.com. It is part of the license conditions. Thanks for understanding :) -->
-                            </div>
+                          <!--    <div class="col-sm-7">
+                                <p>&copy; 2017 starcab94 Restaurant. Template By <a href="https://bootstraptemple.com/" target="_blank">BootstrapTemple.com</a></p>
+                                -- Please do not remove the backlink to us unless you have purchased the attribution-free license at https://bootstraptemple.com. It is part of the license conditions. Thanks for understanding :) 
+                            </div>-->
                         </div>
                     </div>
                 </div>
+             </div>
+            </div>
             </footer>
             <!-- End Footer -->
 
@@ -145,9 +150,8 @@
             <div id="scrollTop" class="btn-unique">
                 <i class="fa fa-angle-up"></i>
             </div><!-- end scroll top btn -->
-
-
-            <!-- moadal booking form -->
+			
+			<!-- moadal booking form -->
             <div class="reservation-overlay hidden-sm hidden-xs">
                 <section id="reservation-modal" class="reservation-modal">
                     <div id="close"><i class="icon-close"></i></div>
@@ -155,46 +159,57 @@
                     <div class="container">
                         <div class="row">
                             <div class="form-holder col-md-12 text-center">
-                                <h2>Make a reservation</h2>
-                                <h3>Book your table now</h3>
+                                <h2>Faire votre reservation</h2>
+                                <h3></h3>
 
                                 <form id="booking-form-alternative" method="get"  action="#">
                                     <div class="row">
-                                        <div class="col-md-push-1 col-sm-10">
-                                            <div class="row">
-                                                <label for="cname" class="col-sm-6 unique">Name
-                                                    <input name="clientname" type="text" id="cname" required>
-                                                </label>
-                                                <label for="cemail" class="col-sm-6 unique">Email
-                                                    <input name="clientemail" type="email" id="cemail" required>
-                                                </label>
-                                                <label for="cnumber" class="col-sm-6 unique">Number
-                                                    <input name="clientnumber" type="text" id="cnumber" required>
-                                                </label>
-                                                <label for="cpeople" class="col-sm-6 unique">How Many People
-                                                    <input name="clientpeople" type="number" id="cpeople" min="1" required>
-                                                </label>
-                                                <label for="cdate" class="col-sm-6 unique">Date
-                                                    <input name="clientdate" type="text" id="cdate" class="datepicker-here" data-language='en' required>
-                                                </label>
-                                                <label for="time-alt" class="col-sm-6 unique">Time
-                                                    <input name="clienttime" type="text" id="time-alt" class="timepicker" required>
-                                                </label>
-                                                <label for="request-alt" class="col-sm-12 unique">Special Request
-                                                    <textarea id="request-alt" name="clientrequest" required></textarea>
-                                                </label>
-                                                <div class="col-sm-12">
-                                                    <button type="submit" class="btn-unique">Book Now</button>
-                                                </div>
+                                    <div class="col-md-10 col-md-push-1">
+                                        <div class="row">
+                                        <label  class="col-sm-12 unique">Prix du trajet
+                                            <textarea id="in_prix_trajet" name="prix" disabled="disabled" required></textarea>
+                                         </label>
+                                         <label  class="col-sm-12 unique">Depart
+                                            <textarea id="from" name="prix" disabled="disabled" required></textarea>
+                                         </label>
+                                         <label  class="col-sm-12 unique">arriver
+                                            <textarea id="to" name="prix" disabled="disabled" required></textarea>
+                                         </label>
+                                            <label for="name" class="col-sm-6 unique">Nom
+                                                <input name="name" type="text" id="name" required>
+                                            </label>
+                                            <label for="email" class="col-sm-6 unique">Email
+                                                <input name="email" type="email" id="email" required>
+                                            </label>
+                                            <label for="number" class="col-sm-6 unique">Numero Telephone
+                                                <input name="number" type="text" id="number" required>
+                                            </label>
+                                            <label for="people" class="col-sm-6 unique">Personnes
+                                                <input name="people" type="number" id="people" min="1" required>
+                                            </label>
+                                            <label for="date" class="col-sm-6 unique">Date
+                                                <input name="date" type="text" id="date" class="datepicker-here" data-language='en' required>
+                                            </label>
+                                            <label for="time" class="col-sm-6 unique">Heurs
+                                                <input name="time" type="text" id="time" class="timepicker" required>
+                                            </label>
+                                            <label for="request" class="col-sm-12 unique">Message
+                                                <textarea id="request" name="request" required></textarea>
+                                            </label>
+                                            <div class="col-sm-12">
+                                                <button type="submit" class="btn-unique">Envoyer</button>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </section>
             </div><!-- end modal booking form -->
+
+            
         </div>
 
 
@@ -254,6 +269,7 @@
                     $('#in_mile').text(distance_in_mile.toFixed(2));
                     $('#in_kilo').text(distance_in_kilo.toFixed(2));
                     $('#in_prix').text((distance_in_kilo.toFixed(2))*1,25);
+                    $('#in_prix_trajet').text((distance_in_kilo.toFixed(2))*1,25);
                     $('#duration_text').text(duration_text);
                     $('#duration_value').text(duration_value);
                     $('#from').text(origin);
